@@ -1,98 +1,47 @@
-# 📚 Smart Study Planner — AI-Powered
+# 🚀 StudyFlow — AI-Powered Smart Study Planner
 
-A production-ready, full-stack AI study planner built with Next.js, MongoDB, and OpenAI.
+StudyFlow is an AI-powered full-stack web application designed to help students plan and manage their studies efficiently.
 
-## 🚀 Quick Start
-
-### 1. Clone & Install
-```bash
-git clone <your-repo>
-cd smart-study-planner
-npm install
-```
-
-### 2. Environment Variables
-Create a `.env.local` file:
-```env
-MONGODB_URI=mongodb+srv://<user>:<password>@cluster.mongodb.net/studyplanner
-JWT_SECRET=your_super_secret_jwt_key_here_make_it_long
-OPENAI_API_KEY=sk-your-openai-api-key-here
-NEXTAUTH_URL=http://localhost:3000
-NEXTAUTH_SECRET=your_nextauth_secret_here
-```
-
-### 3. Run Development Server
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000)
+Users can add subjects and tasks, set deadlines and difficulty levels, and generate a **personalized day-by-day study schedule**. The app also includes an **AI chat assistant** that understands your workload and provides real-time guidance.
 
 ---
 
-## 📁 Folder Structure
-```
-smart-study-planner/
-├── app/
-│   ├── (auth)/
-│   │   ├── login/page.jsx
-│   │   └── signup/page.jsx
-│   ├── (dashboard)/
-│   │   ├── layout.jsx
-│   │   ├── dashboard/page.jsx
-│   │   ├── tasks/page.jsx
-│   │   ├── planner/page.jsx
-│   │   ├── progress/page.jsx
-│   │   └── assistant/page.jsx
-│   ├── api/
-│   │   ├── auth/
-│   │   │   ├── signup/route.js
-│   │   │   └── login/route.js
-│   │   ├── tasks/
-│   │   │   ├── route.js
-│   │   │   └── [id]/route.js
-│   │   ├── planner/
-│   │   │   └── generate/route.js
-│   │   └── assistant/
-│   │       └── route.js
-│   ├── globals.css
-│   └── layout.jsx
-├── components/
-│   ├── ui/
-│   │   ├── Button.jsx
-│   │   ├── Card.jsx
-│   │   ├── Badge.jsx
-│   │   ├── Modal.jsx
-│   │   └── ProgressBar.jsx
-│   ├── layout/
-│   │   ├── Sidebar.jsx
-│   │   ├── Header.jsx
-│   │   └── DashboardLayout.jsx
-│   ├── dashboard/
-│   │   ├── StatsCard.jsx
-│   │   ├── TodayTasks.jsx
-│   │   └── WeeklyPlan.jsx
-│   ├── tasks/
-│   │   ├── TaskCard.jsx
-│   │   ├── TaskForm.jsx
-│   │   └── TaskList.jsx
-│   └── assistant/
-│       ├── ChatMessage.jsx
-│       └── ChatInput.jsx
-├── lib/
-│   ├── db.js
-│   ├── auth.js
-│   ├── openai.js
-│   └── utils.js
-├── models/
-│   ├── User.js
-│   ├── Task.js
-│   └── StudyPlan.js
-├── hooks/
-│   ├── useAuth.js
-│   ├── useTasks.js
-│   └── useStudyPlan.js
-├── store/
-│   └── authStore.js
-└── middleware.js
-```
+## 🔗 Live Demo
+
+👉 https://your-project-name.vercel.app  
+*(Will be updated after deployment)*
+
+---
+
+## ✨ Features
+
+- 🔐 **Authentication** — Secure signup/login using JWT
+- ✅ **Task Management** — Add tasks with subject, deadline, difficulty, and estimated hours
+- 🤖 **AI Study Planner** — Generate a structured weekly study plan using Groq (Llama 3)
+- 💬 **AI Assistant** — Chat with AI for personalized study advice
+- 📊 **Progress Tracking** — Visual progress indicators and task monitoring
+- 🌙 **Modern UI** — Clean, responsive interface with smooth user experience
+
+---
+
+## 🛠 Tech Stack
+
+- **Frontend:** Next.js 14, Tailwind CSS, Framer Motion  
+- **Backend:** Next.js API Routes (Node.js)  
+- **Database:** MongoDB + Mongoose  
+- **Authentication:** JWT, bcrypt, HTTP-only cookies  
+- **AI:** Groq API (Llama 3)  
+- **State Management:** Zustand  
+
+---
+
+## 🧠 How It Works
+
+1. Add your study tasks with subject, deadline, and difficulty  
+2. Click **Generate Plan**  
+3. AI processes your tasks and creates a structured study schedule  
+4. View your plan in a clean dashboard  
+5. Use the AI Assistant for personalized help and recommendations  
+
+---
+
