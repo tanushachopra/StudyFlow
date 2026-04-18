@@ -8,9 +8,7 @@ Users can add subjects and tasks, set deadlines and difficulty levels, and gener
 
 ## 🔗 Live Demo
 
-👉 https://your-project-name.vercel.app  
-*(Will be updated after deployment)*
-
+👉 https://study-flow-three-sand.vercel.app
 ---
 
 ## ✨ Features
