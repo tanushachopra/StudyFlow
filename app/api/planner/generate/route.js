@@ -1,4 +1,5 @@
 // app/api/planner/generate/route.js
+export const runtime = "nodejs";
 import { NextResponse } from 'next/server'
 import connectDB from '@/lib/db'
 import Task from '@/models/Task'
